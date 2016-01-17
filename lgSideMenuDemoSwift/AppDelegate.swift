@@ -8,6 +8,9 @@
 
 import UIKit
 
+let kMainViewController = UIApplication.sharedApplication().delegate!.window!!.rootViewController as! MainViewController
+let kNavigationController = (UIApplication.sharedApplication().delegate!.window!?.rootViewController as! MainViewController).rootViewController as! ChooseNavigationController
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

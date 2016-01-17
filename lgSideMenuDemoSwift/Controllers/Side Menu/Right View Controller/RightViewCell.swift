@@ -1,5 +1,5 @@
 //
-//  LeftViewController.swift
+//  RightViewCell.swift
 //  lgSideMenuDemoSwift
 //
 //  Created by United States of America on 17/01/16.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class LeftViewController: UITableViewController {
+class RightViewCell: UITableViewCell {
     
 }
