@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55BE96011C4CBD7F00205B0B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE96001C4CBD7F00205B0B /* NavigationController.swift */; };
+		55BE96031C4CBD9400205B0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE96021C4CBD9400205B0B /* ViewController.swift */; };
 		5672393F1C4BA2D000DE6DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672393E1C4BA2D000DE6DB1 /* AppDelegate.swift */; };
 		567239441C4BA2D000DE6DB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567239421C4BA2D000DE6DB1 /* Main.storyboard */; };
 		567239461C4BA2D000DE6DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567239451C4BA2D000DE6DB1 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		05D9792B2A83124F71C43ACF /* Pods_lgSideMenuDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lgSideMenuDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0E42B4D97BD7FE7755B912 /* Pods-lgSideMenuDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lgSideMenuDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-lgSideMenuDemoSwift/Pods-lgSideMenuDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		55BE96001C4CBD7F00205B0B /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		55BE96021C4CBD9400205B0B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5672393B1C4BA2D000DE6DB1 /* lgSideMenuDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lgSideMenuDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5672393E1C4BA2D000DE6DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		567239431C4BA2D000DE6DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,7 +146,9 @@
 			children = (
 				5672396D1C4C346E00DE6DB1 /* Left View Controller */,
 				5672396F1C4C346E00DE6DB1 /* Right View Controller */,
+				55BE96001C4CBD7F00205B0B /* NavigationController.swift */,
 				567239671C4BB9FA00DE6DB1 /* MainViewController.swift */,
+				55BE96021C4CBD9400205B0B /* ViewController.swift */,
 			);
 			path = "Side Menu";
 			sourceTree = "<group>";
@@ -308,10 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BE96031C4CBD9400205B0B /* ViewController.swift in Sources */,
 				5672395E1C4BA88700DE6DB1 /* ChooseNavigationController.swift in Sources */,
 				567239741C4C370A00DE6DB1 /* LeftViewCell.swift in Sources */,
 				567239721C4C346E00DE6DB1 /* RightViewController.swift in Sources */,
 				5672393F1C4BA2D000DE6DB1 /* AppDelegate.swift in Sources */,
+				55BE96011C4CBD7F00205B0B /* NavigationController.swift in Sources */,
 				567239661C4BB75100DE6DB1 /* ChooseTableViewController.swift in Sources */,
 				567239681C4BB9FA00DE6DB1 /* MainViewController.swift in Sources */,
 				567239711C4C346E00DE6DB1 /* LeftViewController.swift in Sources */,
