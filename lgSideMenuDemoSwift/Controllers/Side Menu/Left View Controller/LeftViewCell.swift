@@ -30,7 +30,7 @@ class LeftViewCell: UITableViewCell {
         if highlighted {
             self.textLabel?.textColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 1.0)
         } else {
-                self.textLabel?.textColor = _tintColor
+            self.textLabel?.textColor = _tintColor
         }
     }
 }
