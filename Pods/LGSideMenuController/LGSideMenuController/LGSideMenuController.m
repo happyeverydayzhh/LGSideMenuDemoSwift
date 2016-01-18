@@ -1339,6 +1339,12 @@
 
 - (void)showLeftViewAnimated:(BOOL)animated completionHandler:(void(^)())completionHandler
 {
+    printf("\n%d", kLGSideMenuIsLeftViewAlwaysVisible);
+    printf("\n%d", self.isLeftViewShowing);
+    printf("\n%d", self.shouldShowLeftView);
+    printf("\n%d", kLGSideMenuIsRightViewAlwaysVisible);
+    printf("\n%lu", (unsigned long)_leftViewPresentationStyle);
+    
     if (!kLGSideMenuIsLeftViewAlwaysVisible && !self.isLeftViewShowing && self.shouldShowLeftView &&
         !(kLGSideMenuIsRightViewAlwaysVisible && _leftViewPresentationStyle != LGSideMenuPresentationStyleSlideAbove))
     {

@@ -8,8 +8,8 @@
 
 import UIKit
 
-let kMainViewController = UIApplication.sharedApplication().delegate!.window!!.rootViewController as! MainViewController
-let kNavigationController = (UIApplication.sharedApplication().delegate!.window!?.rootViewController as! MainViewController).rootViewController as! ChooseNavigationController
+let kMainViewController: MainViewController     = UIApplication.sharedApplication().delegate!.window!!.rootViewController as! MainViewController
+let kNavigationController: NavigationController = (UIApplication.sharedApplication().delegate!.window!!.rootViewController as! MainViewController).rootViewController as! NavigationController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, didChangeStatusBarOrientation oldStatusBarOrientation: UIInterfaceOrientation) {
+        application.statusBarHidden = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone && UIInterfaceOrientationIsLandscape(application.statusBarOrientation))
+    }
 }
-

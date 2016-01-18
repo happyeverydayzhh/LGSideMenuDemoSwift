@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         
         let navigationController = chooseStoryboard.instantiateInitialViewController() as! ChooseNavigationController
         
-        let window = UIApplication.sharedApplication().delegate?.window
-        window!?.rootViewController = navigationController
+        let window = UIApplication.sharedApplication().delegate?.window!
+        window!.rootViewController = navigationController
         
-        UIView.transitionWithView(window!!,
+        UIView.transitionWithView(window!,
             duration: 0.3,
             options: UIViewAnimationOptions.TransitionCrossDissolve,
             animations: nil,

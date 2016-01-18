@@ -46,7 +46,7 @@ class RightViewController: UITableViewController {
         
         cell.textLabel?.text = titlesArray[indexPath.row]
         cell.textLabel?.font = indexPath.row == 0 ? UIFont.boldSystemFontOfSize(15.0) : UIFont.boldSystemFontOfSize(30.0)
-        cell.separatorView?.hidden = !(indexPath.row != 0 && indexPath.row != 1 && indexPath.row != titlesArray.count - 1)
+        cell.separatorView?.hidden = !(indexPath.row != 0 && indexPath.row != 1 && indexPath.row != (titlesArray.count - 1))
         cell.userInteractionEnabled = (indexPath.row != 1)
         
         cell.tintColor = tintColor

@@ -118,39 +118,39 @@ class MainViewController: LGSideMenuController {
             rightViewController?.tintColor                 = UIColor.whiteColor()
             
         case 4:
-            self.swipeGestureArea = LGSideMenuSwipeGestureArea.Full
-            self.rootViewCoverColorForLeftView = UIColor(red: 0.0, green: 1.0, blue: 0.5, alpha: 0.3)
-            self.rootViewScaleForLeftView = 0.6
-            self.rootViewLayerBorderWidth = 3.0
-            self.rootViewLayerBorderColor = UIColor.whiteColor()
-            self.rootViewLayerShadowRadius = 10.0
+            self.swipeGestureArea               = LGSideMenuSwipeGestureArea.Full
+            self.rootViewCoverColorForLeftView  = UIColor(red: 0.0, green: 1.0, blue: 0.5, alpha: 0.3)
+            self.rootViewScaleForLeftView       = 0.6
+            self.rootViewLayerBorderWidth       = 3.0
+            self.rootViewLayerBorderColor       = UIColor.whiteColor()
+            self.rootViewLayerShadowRadius      = 10.0
             self.rootViewCoverColorForRightView = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 0.3)
             
             self.setLeftViewEnabledWithWidth(250.0, presentationStyle: LGSideMenuPresentationStyle.ScaleFromBig, alwaysVisibleOptions: LGSideMenuAlwaysVisibleOptions.OnNone)
-            self.leftViewAnimationSpeed = 0.4
-            self.leftViewStatusBarStyle = UIStatusBarStyle.Default
-            self.leftViewStatusBarVisibleOptions = LGSideMenuStatusBarVisibleOptions.OnNone
-            self.leftViewBackgroundImage = UIImage(named: "image")
-            self.leftViewStatusBarVisibleOptions = LGSideMenuStatusBarVisibleOptions.OnPadLandscape
+            self.leftViewAnimationSpeed              = 0.4
+            self.leftViewStatusBarStyle              = UIStatusBarStyle.Default
+            self.leftViewStatusBarVisibleOptions     = LGSideMenuStatusBarVisibleOptions.OnNone
+            self.leftViewBackgroundImage             = UIImage(named: "image")
+            self.leftViewStatusBarVisibleOptions     = LGSideMenuStatusBarVisibleOptions.OnPadLandscape
             self.leftViewBackgroundImageInitialScale = 1.5
-            self.leftViewInititialOffsetX = -200.0
-            self.leftViewInititialScale = 1.5
+            self.leftViewInititialOffsetX            = -200.0
+            self.leftViewInititialScale              = 1.5
             
             leftViewController?.tableView.backgroundColor = UIColor.clearColor()
-            leftViewController?.tintColor = UIColor.whiteColor()
+            leftViewController?.tintColor                 = UIColor.whiteColor()
             
             self.setRightViewEnabledWithWidth(100.0, presentationStyle: LGSideMenuPresentationStyle.SlideAbove, alwaysVisibleOptions: LGSideMenuAlwaysVisibleOptions.OnNone)
-            self.rightViewAnimationSpeed = 0.3
-            self.rightViewStatusBarStyle = UIStatusBarStyle.Default
+            self.rightViewAnimationSpeed          = 0.3
+            self.rightViewStatusBarStyle          = UIStatusBarStyle.Default
             self.rightViewStatusBarVisibleOptions = LGSideMenuStatusBarVisibleOptions.OnNone
-            self.rightViewBackgroundColor = UIColor(white: 1.0, alpha: 0.7)
+            self.rightViewBackgroundColor         = UIColor(white: 1.0, alpha: 0.7)
             self.rightViewStatusBarVisibleOptions = LGSideMenuStatusBarVisibleOptions.OnPadLandscape
-            self.rightViewLayerBorderWidth = 3.0
-            self.rightViewLayerBorderColor = UIColor.blackColor()
-            self.rightViewLayerShadowRadius = 10.0
+            self.rightViewLayerBorderWidth        = 3.0
+            self.rightViewLayerBorderColor        = UIColor.blackColor()
+            self.rightViewLayerShadowRadius       = 10.0
             
             rightViewController?.tableView.backgroundColor = UIColor.clearColor()
-            rightViewController?.tintColor = UIColor.blackColor()
+            rightViewController?.tintColor                 = UIColor.blackColor()
             
         default: ()
         }

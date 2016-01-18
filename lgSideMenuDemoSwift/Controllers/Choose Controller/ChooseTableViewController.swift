@@ -47,32 +47,32 @@ class ChooseTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         
-        let navigationController = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController")
+        let navigationController = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController") as! UINavigationController
         let mainViewController = mainStoryboard.instantiateInitialViewController() as! MainViewController
         mainViewController.rootViewController = navigationController
         
         switch indexPath.row {
-        case 0:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromBig, type: 0)
-        case 1:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 0)
-        case 2:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideBelow, type: 0)
-        case 3:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromLittle, type: 0)
-        case 4:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromBig, type: 1)
-        case 5:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 2)
-        case 6:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 3)
-        case 7:
-            mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.init(rawValue: 0)!, type: 4)
-        default: ()
+            case 0:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromBig, type: 0)
+            case 1:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 0)
+            case 2:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideBelow, type: 0)
+            case 3:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromLittle, type: 0)
+            case 4:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.ScaleFromBig, type: 1)
+            case 5:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 2)
+            case 6:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.SlideAbove, type: 3)
+            case 7:
+                mainViewController.setupWithPresentationStyle(LGSideMenuPresentationStyle.init(rawValue: 0)!, type: 4)
+            default: ()
         }
         
         let window = UIApplication.sharedApplication().delegate?.window!
-        window?.rootViewController = mainViewController
+        window!.rootViewController = mainViewController
         
         UIView.transitionWithView(window!,
             duration: 0.3,

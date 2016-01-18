@@ -14,6 +14,10 @@ class ChooseNavigationController: UINavigationController {
         return true
     }
 
+    override func prefersStatusBarHidden() -> Bool {
+        return (UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication().statusBarOrientation) && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone)
+    }
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
