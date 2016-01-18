@@ -25,13 +25,13 @@
         <!--Left View Controller-->
         <scene sceneID="AIE-XW-aAZ">
             <objects>
-                <tableViewController storyboardIdentifier="LeftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Op2-m7-tde" customClass="LeftViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LeftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Op2-m7-tde" customClass="LeftViewController" customModule="lgSideMenuDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BEJ-Qq-jEI">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="668"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="Tjt-Mx-OMj" customClass="LeftViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="Tjt-Mx-OMj" customClass="LeftViewCell" customModule="lgSideMenuDemoSwift" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="250" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tjt-Mx-OMj" id="2Zx-Gl-oa6">
@@ -73,13 +73,13 @@
         <!--Right View Controller-->
         <scene sceneID="l5b-qQ-Msi">
             <objects>
-                <tableViewController storyboardIdentifier="RightViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWu-o7-NFb" customClass="RightViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RightViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWu-o7-NFb" customClass="RightViewController" customModule="lgSideMenuDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VLz-cl-5wb">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="668"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="RTl-RP-cXS" customClass="RightViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="RTl-RP-cXS" customClass="RightViewCell" customModule="lgSideMenuDemoSwift" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="100" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RTl-RP-cXS" id="CUh-h8-mxC">
@@ -121,7 +121,7 @@
         <!--Main View Controller-->
         <scene sceneID="bZ7-2u-LxA">
             <objects>
-                <viewController id="fCl-CW-7Q9" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="fCl-CW-7Q9" customClass="MainViewController" customModule="lgSideMenuDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cr2-as-6Fw"/>
                         <viewControllerLayoutGuide type="bottom" id="rKs-dk-YI8"/>
@@ -141,7 +141,7 @@
         <!--LGSideMenuController-->
         <scene sceneID="Ugw-Qa-BuX">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3xf-gl-oPT" customClass="ViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3xf-gl-oPT" customClass="ViewController" customModule="lgSideMenuDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KvA-KF-9wV"/>
                         <viewControllerLayoutGuide type="bottom" id="5nH-4N-R3D"/>
@@ -166,7 +166,7 @@
                                     <color key="titleColor" red="0.0" green="0.5" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="showChooseController:" destination="3xf-gl-oPT" eventType="touchUpInside" id="tZk-Gu-eb5"/>
+                                    <action selector="showChooseController" destination="3xf-gl-oPT" eventType="touchUpInside" id="szt-sd-gnM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -184,12 +184,12 @@
                     <navigationItem key="navigationItem" title="LGSideMenuController" id="nkM-eS-E35">
                         <barButtonItem key="leftBarButtonItem" title="Left" id="Epm-kM-m7L">
                             <connections>
-                                <action selector="openLeftView:" destination="3xf-gl-oPT" id="bna-Po-uYO"/>
+                                <action selector="openLeftView" destination="3xf-gl-oPT" id="F8t-If-QlS"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Right" id="bpX-c6-MHQ">
                             <connections>
-                                <action selector="openRightView:" destination="3xf-gl-oPT" id="GZY-N4-r7L"/>
+                                <action selector="openRightView" destination="3xf-gl-oPT" id="OHa-S5-7yY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
